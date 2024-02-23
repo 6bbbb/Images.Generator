@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+
+    background: #AA1A1A;
+    background: radial-gradient(at center top, #AA1A1A, #010101);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+p {
+    color: #6F04E8;
+    font-size: 60px;
+    cursor: pointer;
+    font-family: Bernard MT Condensed;
+}
+
+.propmt {
+    padding: 5px;
+    width: 620px;
+    border: 3px solid none;
+    border-radius: 10px;
+    background-color: #550303;
+}
+
+input,
+button {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+
+
+
+input {
+    background-color: #2e2c2c;
+    width: 75%;
+    outline: none;
+    cursor: text;
+    border-radius: 10px;
+    box-shadow: 1px 5px 15px 1px #8b0000;
+
+}
+
+button {
+    background: #010101;
+    background: radial-gradient(at center, #010101, #A00101);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.glow2 {
+    text-shadow: 0 0 30px #ff0000;
+    color: #ffffff;
+    font-size: large;
+}
+
+
+
+
+/* من ال grid تقدر تغير طريقه عرض الصور */
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.images div {
+    height: 250px;
+    width: 250px;
+    background-color: #242222;
+    box-shadow: 1px 5px 15px 1px #8b0000;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.images div img {
+    width: 100%;
+
+}
+
+.p_title {
+    font-size: 80px;
+    color: #ececec;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 1px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+
+    to {
+        text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+}
+
+header img {
+    position: absolute;
+    top: -45px;
+    left: 50px;
+    z-index: -1;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f80404;
+    box-shadow: 0 0 30px #bf2626;
+}
+
+.glow2:hover {
+    text-shadow: 0 0 40px #ff0000;
+    color: #ffffff;
+    font-size: large;
+}
+.fa-square-instagram {
+    font-size: 100px;
+    position: absolute;
+    top: 10px;
+    font-size: 5vw; 
+    left: 50vw;
+    transform: translateX(10%);  
+    box-shadow: px 0px 15px 0px #4400ff;
+    color: #6F04E8;
+}
+
+.im{
+    position: absolute;
+    top: -100px;
+    left: 400px;
+    width: 1200px;
+    height: 1200px;
+    z-index: -1;
+}
+
